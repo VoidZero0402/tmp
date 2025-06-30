@@ -96,6 +96,7 @@ export class AuthService {
         status: 503,
       };
     } catch (error) {
+      console.log(error);
       return {
         message: 'ارسال کد تأیید با خطا مواجه شد',
         status: 500,
