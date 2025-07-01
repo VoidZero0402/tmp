@@ -76,7 +76,7 @@ export class AuthService {
     const ttl = 2 * 60;
 
     try {
-      const response = await axios.post('http://ippanel.com/api/select', {
+      const response = await axios.post('https://ippanel.com/api/select', {
         op: 'pattern',
         user: process.env.FARAZSMS_USER,
         pass: process.env.FARAZSMS_PASS,
